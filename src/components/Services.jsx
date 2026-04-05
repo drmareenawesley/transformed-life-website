@@ -64,12 +64,11 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="services__grid">
-          {services.map((svc, i) => (
+        <div className="services__grid reveal">
+          {services.map((svc) => (
             <div
               key={svc.id}
-              className={`service-card reveal ${active === svc.id ? 'active' : ''}`}
-              style={{ transitionDelay: `${i * 0.08}s` }}
+              className={`service-card ${active === svc.id ? 'active' : ''}`}
               onClick={() => setActive(active === svc.id ? null : svc.id)}
               id={`service-${svc.id}`}
             >
