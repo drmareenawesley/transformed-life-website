@@ -19,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <header className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container navbar__inner">
         <a href="#hero" className="navbar__logo" id="nav-logo">
           <span className="logo-icon">✦</span>

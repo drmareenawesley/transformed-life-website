@@ -11,8 +11,16 @@
 .navbar.scrolled {
   background: rgba(250, 248, 245, 0.96);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   box-shadow: var(--shadow-sm);
   padding: 12px 0;
+}
+
+.navbar.menu-open {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 .navbar__inner {
@@ -27,6 +35,8 @@
   gap: 10px;
   font-family: var(--font-body);
   cursor: pointer;
+  position: relative;
+  z-index: 1001;
 }
 
 .logo-icon {
@@ -113,6 +123,8 @@
   border: none;
   cursor: pointer;
   padding: 4px;
+  position: relative;
+  z-index: 1001;
 }
 
 .navbar__burger span {
