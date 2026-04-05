@@ -5,7 +5,6 @@
   right: 0;
   z-index: 1000;
   padding: 20px 0;
-  background: linear-gradient(to bottom, rgba(250, 248, 245, 0.95) 0%, rgba(250, 248, 245, 0) 100%);
   transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
 }
 
