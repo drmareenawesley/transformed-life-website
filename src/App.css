@@ -1,0 +1,35 @@
+/* App-level reset — remove Vite defaults */
+#root {
+  min-height: 100vh;
+}
+
+/* Smooth page-level transitions */
+main {
+  overflow-x: hidden;
+}
+
+/* Micro-interaction: scroll-to-top button */
+.scroll-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition);
+  z-index: 999;
+}
+
+.scroll-top:hover {
+  background: var(--clr-primary-dark);
+  transform: translateY(-3px);
+}

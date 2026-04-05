@@ -1,0 +1,81 @@
+/* =============================================
+   TRANSFORMED LIFE PSYCHOLOGY — Global Styles
+   ============================================= */
+
+:root {
+  /* Color Palette */
+  --clr-primary: #4a7c6f;
+  --clr-primary-light: #6aaa9a;
+  --clr-primary-dark: #2f5c52;
+  --clr-accent: #c8a97e;
+  --clr-accent-light: #e8d5b7;
+  --clr-bg: #faf8f5;
+  --clr-bg-warm: #f3ede4;
+  --clr-bg-dark: #1a2420;
+  --clr-text: #2c3830;
+  --clr-text-muted: #6b7c76;
+  --clr-white: #ffffff;
+  --clr-border: #e2ddd6;
+
+  /* Typography */
+  --font-body: 'Outfit', sans-serif;
+  --font-heading: 'Cormorant Garamond', serif;
+
+  /* Spacing */
+  --section-padding: 96px 24px;
+  --container-max: 1100px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(44, 56, 48, 0.08);
+  --shadow-md: 0 8px 32px rgba(44, 56, 48, 0.12);
+  --shadow-lg: 0 20px 60px rgba(44, 56, 48, 0.16);
+
+  /* Transitions */
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.18s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Scroll-reveal animation utility */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
