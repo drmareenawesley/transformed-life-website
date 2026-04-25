@@ -55,6 +55,10 @@ a.contact-item:hover {
   flex-shrink: 0;
 }
 
+.contact-item > div {
+  min-width: 0;
+}
+
 .contact-item__label {
   display: block;
   font-size: 11px;
@@ -70,6 +74,8 @@ a.contact-item:hover {
   font-size: 14px;
   font-weight: 500;
   color: var(--clr-text);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact__note {
