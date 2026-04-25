@@ -1,18 +1,6 @@
-import { useState } from 'react';
 import './Contact.css';
 
 export default function Contact() {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '', service: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    // In production, connect this to a backend / email service
-    setSubmitted(true);
-  };
-
   return (
     <section className="contact" id="contact">
       <div className="container contact__inner">
@@ -59,53 +47,22 @@ export default function Contact() {
         </div>
 
         <div className="contact__form-wrap reveal" style={{ transitionDelay: '0.15s' }}>
-          {submitted ? (
-            <div className="form-success">
-              <span>💚</span>
-              <h3>Message Received!</h3>
-              <p>Thank you for reaching out. Dr. Wesley will respond within 1–2 business days. You've taken a brave first step.</p>
-            </div>
-          ) : (
-            <form className="contact__form" onSubmit={handleSubmit} id="contact-form">
-              <h3 className="form-title">Book a Free Consultation</h3>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label htmlFor="name">Full Name *</label>
-                  <input id="name" name="name" type="text" placeholder="Your name" value={form.name} onChange={handleChange} required />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email *</label>
-                  <input id="email" name="email" type="email" placeholder="your@email.com" value={form.email} onChange={handleChange} required />
-                </div>
-              </div>
-
-              <div className="form-row">
-  
-                <div className="form-group">
-                  <label htmlFor="service">Area of Concern</label>
-                  <select id="service" name="service" value={form.service} onChange={handleChange}>
-                    <option value="">Select a topic…</option>
-                    <option value="anxiety">Anxiety & Stress</option>
-                    <option value="depression">Depression</option>
-                    <option value="trauma">Trauma & PTSD</option>
-                    <option value="grief">Grief & Loss</option>
-                    <option value="life">Life Transitions</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="message">Your Message *</label>
-                <textarea id="message" name="message" placeholder="Tell me a little about what has brought you here today…" rows={5} value={form.message} onChange={handleChange} required />
-              </div>
-
-              <button type="submit" className="btn btn--primary form-submit" id="form-submit-btn">
-                Send Message →
-              </button>
-            </form>
-          )}
+          <div className="contact__calendar-card">
+            <h3 className="form-title">Book a Free Consultation</h3>
+            <p className="calendar-desc" style={{ marginBottom: '24px', color: 'var(--clr-text-muted)', lineHeight: '1.6' }}>
+              Take the next step in your healing journey. Choose a date and time that works for you by accessing my secure booking portal below.
+            </p>
+            <a 
+              href="https://calendar.app.google/VgMJhsieEM6Hmeik6" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn--primary" 
+              id="calendar-booking-btn"
+              style={{ display: 'inline-block', width: '100%', textAlign: 'center' }}
+            >
+              Open Booking Calendar 🗓️
+            </a>
+          </div>
         </div>
 
       </div>
