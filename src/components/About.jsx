@@ -24,7 +24,7 @@ export default function About() {
         <div className="about__text-col">
           <p className="section-label reveal">About Dr. Wesley</p>
           <h2 className="section-heading reveal">
-            Compassionate Care Rooted in <em>Science & Humanity</em>
+            Evidence-Based Care for Meaningful, <em>Lasting Transformation</em>
           </h2>
           <div className="about__bio reveal">
             <p>
