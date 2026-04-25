@@ -32,7 +32,7 @@ export default function Hero() {
 
         <div className="hero__trust reveal">
           <div className="trust-item">
-            <span className="trust-num">10+</span>
+            <span className="trust-num">15+</span>
             <span className="trust-label">Years of Practice</span>
           </div>
           <div className="trust-divider" />
