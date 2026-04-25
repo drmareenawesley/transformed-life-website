@@ -18,9 +18,7 @@ export default function Hero() {
         </h1>
 
         <p className="hero__sub reveal">
-          With compassionate, evidence-based care, Dr. Mareena Wesley helps you
-          navigate anxiety, depression, grief, trauma, and PTSD — and rediscover
-          the life you deserve.
+          You hold it together on the outside, but inside, your mind won’t slow down, your energy feels drained, and even small things feel heavy. It doesn’t have to stay this way. Let’s work together to help you feel like yourself again. Therapy with a registered psychologist can help you understand what’s going on and build a way forward that actually feels better.
         </p>
 
         <div className="hero__actions reveal">
