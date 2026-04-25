@@ -58,7 +58,7 @@
   font-family: var(--font-heading);
   font-size: 56px;
   font-weight: 600;
-  color: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.25);
   line-height: 1;
   margin-bottom: 16px;
   user-select: none;
