@@ -31,20 +31,20 @@
 }
 
 .about__image-card {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
   background: var(--clr-white);
   border-radius: 16px;
-  padding: 24px 32px;
-  margin-top: 24px;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--clr-border);
-  position: relative;
-  z-index: 2;
+  padding: 20px 24px;
+  max-width: 240px;
+  box-shadow: var(--shadow-md);
 }
 
 .card-quote {
   display: block;
   font-family: var(--font-heading);
-  font-size: 48px;
+  font-size: 28px;
   color: var(--clr-primary-light);
   line-height: 0.8;
   margin-bottom: 8px;
@@ -188,6 +188,10 @@
   .about__image-placeholder {
     max-width: 100%;
     aspect-ratio: 16/9;
+  }
+  .about__image-card {
+    bottom: -16px;
+    right: 16px;
   }
 
 }
