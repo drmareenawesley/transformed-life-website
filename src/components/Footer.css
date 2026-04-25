@@ -16,12 +16,18 @@
   gap: 12px;
 }
 
-.footer__logo-img {
-  height: 55px;
-  width: auto;
-  object-fit: contain;
-  opacity: 0.9;
-  filter: brightness(0) invert(1);
+.footer__name {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--clr-white);
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.footer__tagline {
+  font-size: 12px;
+  color: var(--clr-text-muted);
 }
 
 .footer__links {
