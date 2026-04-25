@@ -1,4 +1,5 @@
 import './Footer.css';
+import logoImg from '../assets/logo.png';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -7,11 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <span className="logo-icon" style={{ fontSize: '20px', color: 'var(--clr-primary-light)' }}>✦</span>
-          <div>
-            <span className="footer__name">Transformed Life Psychology</span>
-            <span className="footer__tagline">Dr. Mareena Wesley, Registered Psychologist</span>
-          </div>
+          <img src={logoImg} alt="Transformed Life Psychology Logo" className="footer__logo-img" />
         </div>
 
         <nav className="footer__links">
