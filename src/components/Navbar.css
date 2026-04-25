@@ -49,18 +49,30 @@
   display: block;
   font-size: 16px;
   font-weight: 600;
-  color: var(--clr-text);
+  color: var(--clr-white);
   line-height: 1.2;
   letter-spacing: 0.02em;
+  transition: color var(--transition);
+}
+
+.navbar.scrolled .logo-name,
+.navbar.menu-open .logo-name {
+  color: var(--clr-text);
 }
 
 .logo-sub {
   display: block;
   font-size: 11px;
   font-weight: 400;
-  color: var(--clr-text-muted);
+  color: rgba(255, 255, 255, 0.85);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.navbar.scrolled .logo-sub,
+.navbar.menu-open .logo-sub {
+  color: var(--clr-text-muted);
 }
 
 .navbar__links {
@@ -72,10 +84,14 @@
 .navbar__link {
   font-size: 14px;
   font-weight: 500;
-  color: var(--clr-text-muted);
+  color: var(--clr-white);
   letter-spacing: 0.03em;
   position: relative;
   transition: color var(--transition-fast);
+}
+
+.navbar.scrolled .navbar__link {
+  color: var(--clr-text-muted);
 }
 
 .navbar__link::after {
@@ -131,9 +147,14 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--clr-text);
+  background: var(--clr-white);
   border-radius: 2px;
   transition: var(--transition);
+}
+
+.navbar.scrolled .navbar__burger span,
+.navbar.menu-open .navbar__burger span {
+  background: var(--clr-text);
 }
 
 .navbar__burger.open span:nth-child(1) {
