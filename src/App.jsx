@@ -33,6 +33,16 @@ function useScrollReveal() {
 
 function HomePage() {
   useScrollReveal();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 150);
+    }
+  }, []);
   return (
     <>
       <Navbar />
