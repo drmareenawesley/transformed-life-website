@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -6,6 +7,7 @@ import Services from './components/Services';
 import Approach from './components/Approach';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import FAQPage from './pages/FAQPage';
 import './index.css';
 import './App.css';
 
@@ -29,9 +31,8 @@ function useScrollReveal() {
   }, []);
 }
 
-export default function App() {
+function HomePage() {
   useScrollReveal();
-
   return (
     <>
       <Navbar />
@@ -44,5 +45,16 @@ export default function App() {
       </main>
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/faq" element={<FAQPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 import logoImg from '../assets/logo.png';
 
@@ -12,36 +13,51 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
   const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#approach', label: 'Approach' },
-    { href: '#contact', label: 'Contact' },
+    { href: isHome ? '#about' : '/#about', label: 'About' },
+    { href: isHome ? '#services' : '/#services', label: 'Services' },
+    { href: isHome ? '#approach' : '/#approach', label: 'Approach' },
+    { href: isHome ? '#contact' : '/#contact', label: 'Contact' },
+    { href: '/faq', label: 'FAQ', isRoute: true },
   ];
 
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container navbar__inner">
-        <a href="#hero" className="navbar__logo" id="nav-logo">
+        <Link to="/" className="navbar__logo" id="nav-logo">
           <img src={logoImg} alt="Transformed Life Psychology Logo" className="logo-image" />
           <div>
             <span className="logo-name">Transformed Life</span>
             <span className="logo-sub">Psychology</span>
           </div>
-        </a>
+        </Link>
 
         <nav className={`navbar__links ${menuOpen ? 'open' : ''}`} id="nav-links">
-          {navLinks.map(link => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="navbar__link"
-              onClick={() => setMenuOpen(false)}
-            >
-              {link.label}
-            </a>
-          ))}
-          <a href="#contact" className="navbar__cta" id="nav-cta" onClick={() => setMenuOpen(false)}>
+          {navLinks.map(link =>
+            link.isRoute ? (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="navbar__link"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ) : (
+              <a
+                key={link.href}
+                href={link.href}
+                className="navbar__link"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            )
+          )}
+          <a href={isHome ? '#contact' : '/#contact'} className="navbar__cta" id="nav-cta" onClick={() => setMenuOpen(false)}>
             Book Consultation
           </a>
         </nav>
