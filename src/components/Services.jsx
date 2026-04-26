@@ -42,7 +42,7 @@ const services = [
     icon: '📋',
     title: 'Psycho Diagnostic Assessment',
     desc: 'Comprehensive psychological assessments to evaluate cognitive, emotional, and behavioural functioning — providing clarity, accurate diagnosis, and a clear roadmap for your care and support.',
-    tags: ['WSIB', 'Return to work assessments', 'Disability assessments', 'ADHD', 'Psychodiagnostic assessments'],
+    tags: ['WSIB', 'Return to Work Assessments', 'Disability Assessments', 'ADHD', 'Psychodiagnostic Assessments'],
   },
 ];
 
