@@ -15,7 +15,7 @@ export default function About() {
               className="about__photo"
             />
             <div className="about__photo-caption">
-              <span className="caption-name">Dr. Mareena Wesley</span>
+              <span className="caption-name">Dr. Mareena Wesley, PhD, C.Psych</span>
               <span className="caption-title">Registered Clinical Psychologist</span>
             </div>
           </div>
