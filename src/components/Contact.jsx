@@ -36,7 +36,6 @@ export default function Contact() {
               <div>
                 <span className="contact-item__label">Office Hours</span>
                 <span className="contact-item__value">Mon–Sat: 9am – 8pm</span>
-                <span className="contact-item__value">Sun: Holiday</span>
               </div>
             </div>
           </div>
