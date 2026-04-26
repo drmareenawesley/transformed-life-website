@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Approach from './components/Approach';
 import Contact from './components/Contact';
+import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import './index.css';
 import './App.css';
@@ -40,6 +41,7 @@ export default function App() {
         <About />
         <Services />
         <Approach />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
