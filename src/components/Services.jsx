@@ -33,7 +33,7 @@ const services = [
   {
     id: 'faith',
     icon: '✝️',
-    title: 'Christian Faith-Based Counselling',
+    title: 'Faith-Based Counselling',
     desc: 'For those who wish to integrate their Christian faith into the healing process, Dr. Wesley offers a spiritually sensitive approach that honours your beliefs and values alongside evidence-based care.',
     tags: ['Faith Integration', 'Christian Counselling', 'Holistic Care'],
   },
