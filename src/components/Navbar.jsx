@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container navbar__inner">
         <a href="#hero" className="navbar__logo" id="nav-logo">
-          <img src={logoImg} alt="Icon" className="logo-image" />
+          <img src={logoImg} alt="Transformed Life Psychology Logo" className="logo-image" />
           <div>
             <span className="logo-name">Transformed Life</span>
             <span className="logo-sub">Psychology</span>

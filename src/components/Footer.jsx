@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <img src={logoImg} alt="Icon" className="footer__logo-img" />
+          <img src={logoImg} alt="Transformed Life Psychology Logo" className="footer__logo-img" />
           <div>
             <span className="footer__name">Transformed Life Psychology</span>
             <span className="footer__tagline">Dr. Mareena Wesley, Registered Psychologist</span>
