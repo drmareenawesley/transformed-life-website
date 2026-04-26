@@ -34,9 +34,15 @@ export default function About() {
               highs and lows of bipolar disorder. Whatever your story, there is a space for you here.
             </p>
             <p>
-              With over 16 years of experience, I bring a blend of clinical expertise and deep
-              compassion to our work together. My practice is rooted in the belief that while the
-              seasons of life can be incredibly difficult, they do not have to be faced in isolation.
+              With over 15 years of experience, I bring a blend of clinical expertise and deep
+              compassion to our work together. I believe that while the seasons of life can be
+              incredibly difficult, they do not have to be faced in isolation.
+            </p>
+            <p>
+              My practice is rooted in a commitment to academic and clinical excellence. Having
+              graduated at the top of my university for my Bachelor's, Master's, and advanced
+              research degrees, I translate rigorous, evidence-based science into personalized
+              care that honors your unique journey toward healing.
             </p>
 
             <div className="about__subsection">
