@@ -111,3 +111,18 @@
 .footer__crisis strong {
   color: rgba(255,255,255,0.7);
 }
+
+.footer__badge-wrap {
+  margin-top: 16px;
+}
+
+.footer__pt-badge {
+  height: 44px;
+  width: auto;
+  opacity: 0.7;
+  transition: opacity var(--transition-fast);
+}
+
+.footer__pt-badge:hover {
+  opacity: 1;
+}
