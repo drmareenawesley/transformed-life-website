@@ -29,6 +29,9 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
+          <p className="footer__service-areas">
+            Serving Mississauga, Oakville, Milton, Brampton, Etobicoke, Toronto, Burlington, Vaughan, Markham, Richmond Hill, Scarborough, North York, Ajax, Whitby, Oshawa, Hamilton, Caledon, Halton Hills, Georgetown, Aurora, Newmarket, Pickering, East York, Woodbridge, Thornhill, Stouffville with online therapy across Ontario.
+          </p>
           <p className="footer__copy">© {year} Transformed Life Psychology. All rights reserved.</p>
           <p className="footer__crisis">
             If you are in crisis, please call <strong>9-8-8</strong> (Canada Suicide Crisis Helpline) or go to your nearest emergency room.
