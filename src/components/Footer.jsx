@@ -1,5 +1,6 @@
 import './Footer.css';
 import logoImg from '../assets/logo.png';
+import ptBadge from '../assets/psychology-today.png';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -36,6 +37,9 @@ export default function Footer() {
           <p className="footer__crisis">
             If you are in crisis, please call <strong>9-8-8</strong> (Canada Suicide Crisis Helpline) or go to your nearest emergency room.
           </p>
+          <div className="footer__badge-wrap">
+            <img src={ptBadge} alt="Verified by Psychology Today" className="footer__pt-badge" />
+          </div>
         </div>
       </div>
     </footer>
