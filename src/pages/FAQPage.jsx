@@ -78,7 +78,7 @@ export default function FAQPage() {
             <h1 className="faq-page__heading">Frequently Asked <em>Questions</em></h1>
             <p className="faq-page__sub">
               Everything you need to know before beginning your journey. Can't find what you're looking for?{' '}
-              <Link to="/#contact">Get in touch</Link> and we'll be happy to help.
+              <a href="/#contact">Get in touch</a> and we'll be happy to help.
             </p>
           </div>
         </div>
