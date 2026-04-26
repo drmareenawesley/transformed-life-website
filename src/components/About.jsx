@@ -14,9 +14,9 @@ export default function About() {
               alt="Dr. Mareena Wesley, Registered Psychologist"
               className="about__photo"
             />
-            <div className="about__image-card">
-              <span className="card-quote">"</span>
-              <p>Healing begins when we allow ourselves to be truly heard and understood.</p>
+            <div className="about__photo-caption">
+              <span className="caption-name">Dr. Mareena Wesley</span>
+              <span className="caption-title">Registered Clinical Psychologist</span>
             </div>
           </div>
         </div>
