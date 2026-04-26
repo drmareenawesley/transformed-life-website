@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: 'How many sessions will I need?',
-    a: 'Every person's journey is unique. The number of sessions depends on your individual goals, the nature of your concerns, and the pace of progress that feels right for you. Dr. Wesley will work collaboratively with you to regularly review goals and adjust the plan as needed.',
+    a: `Every person's journey is unique. The number of sessions depends on your individual goals, the nature of your concerns, and the pace of progress that feels right for you. Dr. Wesley will work collaboratively with you to regularly review goals and adjust the plan as needed.`,
   },
   {
     q: 'Is everything I share kept confidential?',
