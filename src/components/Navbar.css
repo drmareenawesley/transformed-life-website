@@ -44,7 +44,7 @@
   width: auto;
   object-fit: contain;
   transition: transform var(--transition);
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15)) drop-shadow(0 0 1px rgba(0, 0, 0, 0.2));
 }
 
 .navbar__logo:hover .logo-image {
@@ -53,13 +53,17 @@
 
 .logo-name {
   display: block;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 17.5px;
+  font-weight: 800;
   color: var(--clr-white);
   line-height: 1.2;
   letter-spacing: 0.02em;
   transition: color var(--transition);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 
+    -0.5px -0.5px 0 rgba(0,0,0,0.1),  
+     0.5px -0.5px 0 rgba(0,0,0,0.1),
+    -0.5px  0.5px 0 rgba(0,0,0,0.1),
+     0.5px  0.5px 0 rgba(0,0,0,0.1);
 }
 
 .navbar.scrolled .logo-name,
