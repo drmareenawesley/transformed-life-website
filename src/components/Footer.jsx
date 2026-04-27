@@ -1,26 +1,38 @@
+import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
 import logoImg from '../assets/logo.png';
 import ptBadge from '../assets/psychology-today.png';
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   return (
     <footer className="footer">
       <div className="container footer__inner">
-        <div className="footer__brand">
+        <Link 
+          to="/" 
+          className="footer__brand"
+          onClick={() => {
+            if (isHome) {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+        >
           <img src={logoImg} alt="Transformed Life Psychology Logo" className="footer__logo-img" />
           <div>
             <span className="footer__name">Transformed Life Psychology</span>
             <span className="footer__tagline">Dr. Mareena Wesley, Registered Psychologist</span>
           </div>
-        </div>
+        </Link>
 
         <nav className="footer__links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
-          <a href="#contact">Contact</a>
+          <a href={isHome ? '#about' : '/#about'}>About</a>
+          <a href={isHome ? '#services' : '/#services'}>Services</a>
+          <a href={isHome ? '#approach' : '/#approach'}>Approach</a>
+          <a href={isHome ? '#contact' : '/#contact'}>Contact</a>
+          <Link to="/faq">FAQ</Link>
         </nav>
 
         <div className="footer__contact-row">
