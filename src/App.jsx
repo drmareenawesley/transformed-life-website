@@ -8,6 +8,7 @@ import Approach from './components/Approach';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FAQPage from './pages/FAQPage';
+import ScrollToTop from './components/ScrollToTop';
 import './index.css';
 import './App.css';
 
@@ -61,6 +62,7 @@ function HomePage() {
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/faq" element={<FAQPage />} />
