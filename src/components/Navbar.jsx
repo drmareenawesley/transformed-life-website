@@ -27,7 +27,17 @@ export default function Navbar() {
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''} ${menuOpen ? 'menu-open' : ''}`}>
       <div className="container navbar__inner">
-        <Link to="/" className="navbar__logo" id="nav-logo">
+        <Link 
+          to="/" 
+          className="navbar__logo" 
+          id="nav-logo"
+          onClick={() => {
+            if (isHome) {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            setMenuOpen(false);
+          }}
+        >
           <img src={logoImg} alt="Transformed Life Psychology Logo" className="logo-image" />
           <div>
             <span className="logo-name">Transformed Life</span>
